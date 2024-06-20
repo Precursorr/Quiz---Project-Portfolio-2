@@ -1,0 +1,88 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Set default html styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #708090;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'PT+Sans', sans-serif;
+}
+
+/* Heading */
+header {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+/* intro message */
+.intro-msg {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.intro-msg > h3 {
+    padding: 10px 0;
+}
+
+/* Rules button */
+.btn-rules {
+    padding-top: 10px;
+}
+
+.btn-rules > button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: #708090;
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom right, #708090, #ffffff, #A9A9A9);
+    color: #000000;
+}
+
+/* Rules information */
+.rules-info {
+    width: 90%;
+    margin: auto;
+    border: 2px solid #000000;
+    background-color: #505050;
+    border-radius: 20px;
+    display: none;
+}
+
+.rules-info > h2 {
+    padding-top: 7px;
+    font-size: 2rem;
+}
+
+.list {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 7px 0;
+}
+
+.list > li {
+    padding: 7px 7px;
+}
+
+/* Return button */
+.rules-info > button {
+    margin: 20px 20px;
+}
+
+.btn-return {
+    width: 75px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 1rem;
+}
+
