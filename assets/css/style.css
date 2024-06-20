@@ -35,7 +35,7 @@ header {
 
 /* Rules button */
 .btn-rules {
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 .btn-rules > button {
@@ -86,3 +86,23 @@ header {
     font-size: 1rem;
 }
 
+/* Quiz Selection */
+.quiz-select {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.h-c-select, .js-select {
+    padding: 25px;
+}
+
+.h-c-select > h2, .js-select > h2 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+
+.h-c-select > img, .js-select > img {
+    padding-top: 10px;
+}
