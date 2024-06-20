@@ -56,6 +56,7 @@ header {
     background-color: #505050;
     border-radius: 20px;
     display: none;
+    z-index: 1;
 }
 
 .rules-info > h2 {
