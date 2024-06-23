@@ -1,18 +1,25 @@
+// Rules window popup
 let rules = document.getElementById("rulesInfo");
-let open = document.getElementById("btnRules");
-let close = document.getElementsByClassName("btn-return")[0];
 
-open.onClick = function () {
+function btnRules(){
     rules.style.display = "block";
 }
 
-close.onclick = function() {
-    rules.style.display = "none";
-  }
+function btnReturn(){
+    rules.style.display = "none"
+}
 
 window.onclick = function(event) {
-if (event.target == rules) {
-    modal.style.display = "none";
+    if (event.target == rules) {
+      rules.style.display = "none";
+    }
+  };
+
+// HTML & CSS History popup
+
+let history = document.getElementById("historyInfo")
+
+function btnHistory(){
+    history.style.display = "block";
 }
-}
-  
+
