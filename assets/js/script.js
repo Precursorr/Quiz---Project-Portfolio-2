@@ -17,7 +17,7 @@ window.onclick = function(event) {
 
 // HTML & CSS History popup
 
-let history = document.getElementById("historyInfo")
+let history = document.getElementById("historyInfo");
 
 function btnHistory(){
     history.style.display = "block";
