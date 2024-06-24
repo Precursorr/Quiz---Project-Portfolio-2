@@ -29,35 +29,31 @@ function btnHistoryReturn(){
 
 // Begin quiz 1 with first options
 let answers = Array.from(document.getElementsByClassName("answers"))
-let questions1 = {
+let questions = [{
   question: "Which character is used to indicate an end tag?",
   answer: 1,
   answers: ["/", "*", "<", ">"]
-}
-
-let questions2 = {
-  question: "Which of these elements are all <table> elements?",
+},
+{ question: "Which of these elements are all &lt;table&gt; elements?",
   answer: 1,
-  answers: ["<table><tr><td>"]
-}
+  answers: ["&lt;table&gt;&lt;tr&gt;&lt;td&gt;", "&lt;table&gt;&lt;tr&gt;&lt;tt&gt;", "&lt;thread&gt;&lt;body&gt;&lt;tr&gt;", "&lt;table&gt;&lt;head&gt;&lt;tfoot&gt;"]
+}]
 
 function begin(){
   history.style.display = "none";
   quiz1.style.display = "block";
   btnBegin.style.display = "none";
-  document.getElementById("question").innerHTML = questions1.question
-  document.getElementById("answers1").innerHTML = questions1.answers[0]
-  document.getElementById("answers2").innerHTML = questions1.answers[1]
-  document.getElementById("answers3").innerHTML = questions1.answers[2]
-  document.getElementById("answers4").innerHTML = questions1.answers[3]
+  document.getElementById("question").innerHTML = questions[0].question
+  document.getElementById("answers1").innerHTML = questions[0].answers[0]
+  document.getElementById("answers2").innerHTML = questions[0].answers[1]
+  document.getElementById("answers3").innerHTML = questions[0].answers[2]
+  document.getElementById("answers4").innerHTML = questions[0].answers[3]
 }
 
 function answer(){
-  if (userAnswer === questions.answers[0]) {
-    document.getElementById("question").innerHTML = questions2.question
-    document.getElementById("answers1").innerHTML = questions2.answers[0]
-    document.getElementById("answers2").innerHTML = questions2.answers[1]
-    document.getElementById("answers3").innerHTML = questions2.answers[2]
-    document.getElementById("answers4").innerHTML = questions2.answers[3]
+    document.getElementById("question").innerHTML = questions[1].question
+    document.getElementById("answers1").innerHTML = questions[1].answers[0]
+    document.getElementById("answers2").innerHTML = questions[1].answers[1]
+    document.getElementById("answers3").innerHTML = questions[1].answers[2]
+    document.getElementById("answers4").innerHTML = questions[1].answers[3]
   }
-}
