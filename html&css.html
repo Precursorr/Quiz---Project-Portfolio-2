@@ -39,17 +39,20 @@
             European Organization for Nuclear Research (CERN) with Berners-Lee. Two years later the World Wide Web
             Consortium (W3C) adopted the first standardized specifications for CSS, called CSS1.. <a
                 href="https://www.britannica.com/technology/CSS-programming-language">Find out more here!</a></p>
-        <button class="btn-return" id="btn-return" onclick="btnReturn()">Return</button>
+        <button class="btn-return" id="btn-return" onclick="btnHistoryReturn()">Return</button>
     </div>
 
+    <!-- Begin Button -->
+    <button class="begin" id="begin" onclick="begin()">Begin</button>
+
     <!-- Questions -->
-    <div class="questions-1">
-        <h2>Question goes here</h2>
+    <div class="questions-1" id="quiz1">
+        <h2 id="question">Question goes here</h2>
         <div class="btn-answers-1">
-            <button>Answer 1</button>
-            <button>Answer 2</button>
-            <button>Answer 3</button>
-            <button>Answer 3</button>
+            <button id="answers1">Answer 1</button>
+            <button id="answers2">Answer 2</button>
+            <button id="answers3">Answer 3</button>
+            <button id="answers4">Answer 3</button>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
