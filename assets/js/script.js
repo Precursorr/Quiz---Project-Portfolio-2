@@ -20,6 +20,10 @@ window.onclick = function(event) {
 let history = document.getElementById("historyInfo");
 
 function btnHistory(){
-    history.style.display = "block";
+  history.style.display = "block";
+}
+
+function btnReturn(){
+  history.style.display = "none"
 }
 
