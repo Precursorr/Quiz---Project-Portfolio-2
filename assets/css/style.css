@@ -202,3 +202,13 @@ header {
     color: #000000;
     margin-bottom: 50px;
 }
+
+/* Extra small devices (phones, 550px and down) */
+@media only screen and (max-width: 550px) {
+    .quiz-select {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+    }
+}
