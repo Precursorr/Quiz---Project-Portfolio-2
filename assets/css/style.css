@@ -205,10 +205,56 @@ header {
 
 /* Extra small devices (phones, 550px and down) */
 @media only screen and (max-width: 550px) {
+    /* Quiz select options */
     .quiz-select {
         display: flex;
         flex-direction: column;
         width: fit-content;
         margin: auto;
     }
+
+    /* Answers */
+    .btn-answers-1, .btn-answers-2 {
+        display: grid;
+        grid-template-columns: 200px 100px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        padding-top: 50px;
+        margin: auto
+    }
+
+    .btn-answers-1 > button, .btn-answers-2 > button {
+        width: 150px;
+        height: 100px;
+    }
+
+    /* History */
+    .history-info {
+    width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+    /* History */
+    .history-info {
+        width: 90%;
+    }
+
+    /* Answers */
+    .btn-answers-1, .btn-answers-2 {
+        display: grid;
+        grid-template-columns: 200px 100px;
+        grid-column-gap: 150px;
+        grid-row-gap: 10px;
+        padding-top: 50px;
+        margin: auto;
+        padding-left: 80px;
+    }
+
+    .btn-answers-1 > button, .btn-answers-2 > button {
+        width: 250px;
+        height: 150px;
+    }
+
+
 }
